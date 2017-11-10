@@ -5,3 +5,5 @@ bin/*
 app/*
 docker/*
 documentation/*
+mysql/*
+redis/*

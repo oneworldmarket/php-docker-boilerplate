@@ -10,7 +10,9 @@
 # PHP Debugger (xdebug|blackfire|none)
 
 PHP_DEBUGGER=xdebug
-
+### PHP_IDE_CONFIG="serverName=webdevops"
+### XDEBUG_REMOTE_HOST=local-v3.idibu.com
+### XDEBUG_REMOTE_PORT=9001
 #######################################
 # Context environment
 
