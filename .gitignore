@@ -5,3 +5,6 @@ nbproject
 /app/*
 /app/index.php
 /docker-compose.yml
+redis
+mysql
+sphinx
