@@ -97,6 +97,23 @@ services:
       - etc/environment.yml
       - etc/environment.development.yml
 
+  sphinx:
+    image: avatarnewyork/dockerenv-sphinx:2.2
+    links:
+      - mysql
+    ports:
+      - 9312:9312
+    volumes:
+      - ./sphinx/log:/var/log/sphinxsearch
+      - ./sphinx/run:/var/run/sphinxsearch
+      - ./sphinx/data:/var/lib/sphinxsearch/data
+      - ./sphinx/vardata:/var/data
+      - ./sphinx/etc:/etc/sphinx
+#    depends_on:
+#        - mysql
+#    networks:
+#      - database
+
   #######################################
   # PostgreSQL server
   #######################################
@@ -249,3 +266,4 @@ volumes:
   elasticsearch:
   redis:
   phpmyadmin:
+  sphinx:

@@ -7,3 +7,4 @@ docker/*
 documentation/*
 mysql/*
 redis/*
+sphinx/*
