@@ -6,5 +6,6 @@ app/*
 docker/*
 documentation/*
 mysql/*
+postgres/*
 redis/*
 sphinx/*
